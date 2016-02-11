@@ -40,3 +40,5 @@ readability and speed of node were worth the tradeoff versus the given groovy sc
 Finally, Javascript/html/css were the best language choices because it allowed for the use of the Google Maps API, an API that became
 depricated for Java, python and a few other languages on January 29th. The fantastic framework that Google has built made the use
 of Google Maps in the solution seem necessary.
+
+Both the Requirements Answers and UserGuide are Rich Text Format Files, so they should be opened with a word processor that is compatible with that type to be read.
