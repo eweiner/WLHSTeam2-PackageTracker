@@ -1,0 +1,91 @@
+/**
+* Gives a small margin to the top of the list container div
+*/
+.listContainer{
+    margin-top:15px;
+}
+/**
+* Eliminates the bullets that accompany unordered lists and changes mouse pointer when hovering
+*/
+.expList ul, li {
+    list-style: none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+}
+
+/**
+* Adds a background color when hovering over the name of a package
+*/
+.name:hover {
+    background-color:darkgrey;
+}
+
+.UUIDField {
+    width:220px
+}
+
+/**
+* Puts an image
+*/
+#statistics {
+    background-image: url("sidebarbackground.png");
+    border-style: solid;
+    border-width: 2px;
+    border-color: 0F1D41;
+}
+ 
+/**
+* Changes font to be consistent with the font in google maps
+*/
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-image: url("wlBackground.png");
+    background-repeat: no-repeat;
+    background-color:azure;
+    overflow:hidden;
+}
+ 
+
+
+#statistics {
+    position:fixed;
+}
+/**
+* Puts the statistics and google map divs together in display
+*/
+#statistics, #googleMap {
+    position: fixed;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+
+#mode {
+    height:10px;
+    font-size:15px;
+}
+
+/**
+* Add vertical scroll bar to user mode UUID boxes
+*/
+#userModeHandler {
+    height:150px;
+    overflow-y:scroll;
+}
+
+#submitUUID {
+    margin-left:20px;
+}
+
+.UUIDField {
+    margin-left:10px;
+}
+
+#adMode {
+    margin-left:475px;
+}
+
+#statsTitle {
+    font-size:22px;
+}

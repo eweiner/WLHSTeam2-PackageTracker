@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Reference required support libraries of jquery and jquery ui, google maps
+            and finally makes reference to the underlying javascript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry"></script>
+    <script src="mapManipulation.js"></script>
+    <link rel="stylesheet" href="default.css"> 
+</head>
+
+<body>
+    <div style="width:100%;height:90px">
+
+    </div>
+        <!-- Creates two Divs, googleMap to display the map and statistics to display package stats-->
+        <div id="googleMap" style="width:550px;height:500px;"></div> 
+        <div id="statistics" style="width:350px;height:496px;overflow-y:scroll">
+            <!-- Creates an unordered list that will be populated with package information -->
+            <ul align="left" id="packages" class="listContainer">
+            <li id="statsTitle">Package Statistics</li><br>
+            </ul>
+        </div>
+    <!-- Creates a div to contain user interactions like user/admin mode and zoom out-->
+    <div id="buttonDiv" style="width:404;height:400px">
+        <button onclick="zoomOut()">Reset Zoom</button> 
+        <!--button id="adMode" onclick="setAdminMode()">Admin Mode</button>
+        <button onclick="setUserMode()">User Mode</button-->
+        <input id="adMode" onclick="setAdminMode()" type="radio">Admin Mode
+        <input id="userMode" onclick="setUserMode()" type="radio">User Mode
+        
+    </div>
+    
+    
+</body>
+</html>
